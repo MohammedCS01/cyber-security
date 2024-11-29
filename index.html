@@ -4,183 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Card Game</title>
-    <style>
-        /* Reset and Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
-            color: #f0f0f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* Welcome Section */
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #ff7a59;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #ffe4d9;
-        }
-
-        /* Game Section */
-        .container {
-            background: #2a2a3d;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            margin: 20px 0;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .container h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-
-        #game-board {
-            display: grid;
-            grid-template-columns: repeat(4, 100px);
-            grid-gap: 10px;
-            justify-content: center;
-            margin: 20px auto;
-        }
-
-        .card {
-            width: 100px;
-            height: 100px;
-            background: #444;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            cursor: pointer;
-            perspective: 1000px;
-        }
-
-        .card.flipped {
-            background: #ff7a59;
-            color: #fff;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            background: #ff7a59;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        button:hover {
-            background: #ff5a33;
-        }
-
-        /* Blog Section */
-        section#blog {
-            background: #fff;
-            color: #333;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: left;
-        }
-
-        #blog h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #ff7a59;
-        }
-
-        #blog p {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        #blog ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
-        #blog ul li {
-            margin-bottom: 5px;
-        }
-
-        /* Footer Section */
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #ffe4d9;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Welcome Section -->
-    <header>
+    <!-- Header Section -->
+    <header class="header">
         <h1>Welcome to the Memory Card Game</h1>
         <p>Challenge your memory and have fun!</p>
     </header>
 
-    <!-- Game Section -->
+    <!-- Main Content -->
     <div class="container">
         <h2>Game Section</h2>
-        <div id="game-board">
-            <!-- Cards will be dynamically generated -->
+        <div id="game-board" class="game-board">
+            <!-- Cards will be dynamically inserted here -->
         </div>
-        <button>Start New Game</button>
+        <button class="btn">Start New Game</button>
     </div>
 
-    <!-- Blog Section -->
+    <!-- Article Section -->
     <section id="blog">
         <h2>About the Memory Card Game</h2>
         <p>
-            The Memory Card Game, also known as Concentration, is a classic game designed to challenge and improve memory skills. It is simple yet engaging, making it suitable for players of all ages.
-            </p>
-        <p>
-            In this game, players flip over pairs of cards, aiming to find matching pairs. It enhances cognitive skills, promotes critical thinking, and is a fun way to connect with friends and family.
+            The Memory Card Game, also known as Concentration, is a classic game designed to challenge and improve memory skills. 
+            It is simple yet engaging, making it suitable for players of all ages.
         </p>
         <p>
-            This game has been adapted into various digital and physical formats over the years, but its core mechanics remain timeless. Playing it regularly can sharpen memory retention and attention to detail.
+            In this game, players flip over pairs of cards, aiming to find matching pairs. 
+            It enhances cognitive skills, promotes critical thinking, and is a fun way to connect with friends and family.
         </p>
-        <h3>How to Play:</h3>
-        <ul>
-            <li>Start with a shuffled deck of cards placed face down.</li>
-            <li>Flip two cards on each turn to see if they match.</li>
-            <li>If they match, keep the pair; otherwise, flip them back over.</li>
-            <li>Continue until all pairs are matched.</li>
-        </ul>
+        <p>
+            This game has been adapted into various digital and physical formats over the years, but its core mechanics remain timeless.
+            Playing it regularly can sharpen memory retention and attention to detail.
+        </p>
+        <p>
+            <strong>How to Play:</strong>
+            <ul>
+                <li>Start with a shuffled deck of cards placed face down.</li>
+                <li>Flip two cards on each turn to see if they match.</li>
+                <li>If they match, keep the pair; otherwise, flip them back over.</li>
+                <li>Continue until all pairs are matched.</li>
+            </ul>
+        </p>
         <p>
             Whether you're playing to pass the time or to train your brain, the Memory Card Game is a delightful challenge for everyone.
         </p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Memory Card Game | All rights reserved</p>
+    <footer class="footer">
+        <p>&copy; 2024 Memory Card Game | All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
