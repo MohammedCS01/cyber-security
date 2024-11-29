@@ -1,4 +1,165 @@
-The Memory Card Game, also known as Concentration, is a classic game designed to challenge and improve memory skills. It is simple yet engaging, making it suitable for players of all ages.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Welcome Section */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ff7a59;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ffe4d9;
+        }
+
+        /* Game Section */
+        .container {
+            background: #2a2a3d;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px 0;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            background: #444;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            perspective: 1000px;
+        }
+
+        .card.flipped {
+            background: #ff7a59;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #ff7a59;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff5a33;
+        }
+
+        /* Blog Section */
+        section#blog {
+            background: #fff;
+            color: #333;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        #blog h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #ff7a59;
+        }
+
+        #blog p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        #blog ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        #blog ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #ffe4d9;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <header>
+        <h1>Welcome to the Memory Card Game</h1>
+        <p>Challenge your memory and have fun!</p>
+    </header>
+
+    <!-- Game Section -->
+    <div class="container">
+        <h2>Game Section</h2>
+        <div id="game-board">
+            <!-- Add emoji cards dynamically -->
+            🍮 🍇 🥝 🍌 🥝 🍟 🍌 🍇 🎂 🎂 🍎 🍟 🍫 🍮 🍎 🍫
+        </div>
+        <button>Start New Game</button>
+    </div>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>About the Memory Card Game</h2>
+        <p>
+         The Memory Card Game, also known as Concentration, is a classic game designed to challenge and improve memory skills. It is simple yet engaging, making it suitable for players of all ages.
         </p>
         <p>
             In this game, players flip over pairs of cards, aiming to find matching pairs. It enhances cognitive skills, promotes critical thinking, and is a fun way to connect with friends and family.
