@@ -5,17 +5,17 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #eeddf0;
+  background-color: #ffffff;
 }
 
 h1 {
-  color: #d38692;
+  color: #f85a72;
   font-size: 2em;
 }
 
 .container {
   text-align: center;
-  background-color: #a7f1c5;
+  background-color: #eeddf9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@ h1 {
 }
 
 .card-front {
-  background-color: #28a347;
+  background-color: #ffffff;
 }
 
 .card-back {
@@ -83,14 +83,14 @@ button {
   color: rgb(228, 240, 240);
   border: none;
   cursor: pointer;
-  background-color: #008cba;
+  background-color: #050505;
 }
 
 /* Added styles for the blog section */
 #blog {
   margin: 20px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: #fdffe2;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
