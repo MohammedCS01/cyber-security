@@ -75,11 +75,13 @@
             font-size: 2rem;
             cursor: pointer;
             perspective: 1000px;
+            color: transparent; /* النص غير مرئي */
+            transition: all 0.3s ease;
         }
 
         .card.flipped {
             background: #ff7a59;
-            color: #fff;
+            color: #fff; /* النص يصبح مرئيًا */
         }
 
         button {
@@ -149,7 +151,6 @@
     <div class="container">
         <h2>Game Section</h2>
         <div id="game-board">
-            <!-- Add emoji cards dynamically -->
             🍮 🍇 🥝 🍌 🥝 🍟 🍌 🍇 🎂 🎂 🍎 🍟 🍫 🍮 🍎 🍫
         </div>
         <button>Start New Game</button>
@@ -157,9 +158,9 @@
 
     <!-- Blog Section -->
     <section id="blog">
-        <h2>About the Memory Card Game</h2>
+  <h2>About the Memory Card Game</h2>
         <p>
-         The Memory Card Game, also known as Concentration, is a classic game designed to challenge and improve memory skills. It is simple yet engaging, making it suitable for players of all ages.
+            The Memory Card Game, also known as Concentration, is a classic game designed to challenge and improve memory skills. It is simple yet engaging, making it suitable for players of all ages.
         </p>
         <p>
             In this game, players flip over pairs of cards, aiming to find matching pairs. It enhances cognitive skills, promotes critical thinking, and is a fun way to connect with friends and family.
@@ -186,3 +187,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+        
