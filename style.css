@@ -62,7 +62,7 @@ h1 {
 }
 
 .card-front {
-  background-color: #e68ce0;
+  background-color: #28a347;
 }
 
 .card-back {
@@ -84,4 +84,24 @@ button {
   border: none;
   cursor: pointer;
   background-color: #008cba;
+}
+
+/* Added styles for the blog section */
+#blog {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#blog h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#blog p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
 }
