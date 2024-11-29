@@ -5,20 +5,20 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #000; /* الخلفية سوداء */
+  background-color: #000; /* اللون الأسود للخلفية */
 }
 
 h1 {
-  color: #fff; /* النص باللون الأبيض */
+  color: #fff; /* اللون الأبيض للنص */
   font-size: 2em;
 }
 
 .container {
   text-align: center;
-  background-color: #000; /* الخلفية سوداء */
+  background-color: #000; /* اللون الأسود للخلفية */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* تأثير خفيف للظل */
 }
 
 .game-board {
@@ -32,13 +32,13 @@ h1 {
 .card {
   width: 100px;
   height: 100px;
-  background-color: #fff; /* البطاقات بيضاء */
+  background-color: #808080; /* اللون الرمادي للبطاقات */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2em;
   cursor: pointer;
-  color: #000; /* النص داخل البطاقات باللون الأسود */
+  color: #fff; /* النص باللون الأبيض */
   perspective: 1000px;
 }
 
@@ -54,13 +54,13 @@ h1 {
 }
 
 .card-front {
-  background-color: #fff; /* البطاقات بيضاء */
+  background-color: #808080; /* اللون الرمادي */
 }
 
 .card-back {
-  background-color: #fff; /* البطاقات بيضاء */
+  background-color: #808080; /* اللون الرمادي */
   font-size: 60px;
-  color: #000; /* النص داخل البطاقات باللون الأسود */
+  color: #fff; /* اللون الأبيض للنص */
   transform: rotateY(180deg);
 }
 
@@ -72,28 +72,28 @@ button {
   padding: 15px 20px;
   font-size: 18px;
   font-weight: 600;
-  color: #fff; /* النص بالأبيض */
-  border: 2px solid #fff; /* حدود بيضاء */
+  color: #fff; /* اللون الأبيض للنص */
+  border: 2px solid #808080; /* حدود رمادية */
   cursor: pointer;
-  background-color: #000; /* الخلفية سوداء */
+  background-color: #000; /* اللون الأسود للخلفية */
 }
 
 /* Added styles for the blog section */
 #blog {
   margin: 20px;
   padding: 15px;
-  background-color: #000; /* الخلفية سوداء */
-  border: 1px solid #fff; /* الحدود باللون الأبيض */
+  background-color: #000; /* اللون الأسود */
+  border: 1px solid #808080; /* الحدود باللون الرمادي */
   border-radius: 5px;
 }
 
 #blog h2 {
   font-size: 24px;
-  color: #fff; /* النص بالأبيض */
+  color: #fff; /* اللون الأبيض */
 }
 
 #blog p {
   font-size: 16px;
   line-height: 1.6;
-  color: #fff; /* النص بالأبيض */
+  color: #fff; /* اللون الأبيض للنص */
 }
