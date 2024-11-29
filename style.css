@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #d38692;
+  color: #f85a72;
   font-size: 2em;
 }
 
@@ -83,7 +83,7 @@ button {
   color: rgb(228, 240, 240);
   border: none;
   cursor: pointer;
-  background-color: #008cba;
+  background-color: #050505;
 }
 
 /* Added styles for the blog section */
