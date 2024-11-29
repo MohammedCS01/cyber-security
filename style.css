@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #eeddf0;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 
 .container {
   text-align: center;
-  background-color: #050505;
+  background-color: #eeddf9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -90,7 +90,7 @@ button {
 #blog {
   margin: 20px;
   padding: 15px;
-  background-color: #f4ff55;
+  background-color: #f9ffaa;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
