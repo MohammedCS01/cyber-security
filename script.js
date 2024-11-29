@@ -84,4 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // إنشاء اللعبة عند بدء الصفحة
   createBoard();
+
+  // إضافة وظيفة قلب البطاقة باستخدام toggle
+  const allCards = document.querySelectorAll(".card");
+  allCards.forEach(card => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
+    });
+  });
 });
