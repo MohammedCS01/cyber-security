@@ -5,20 +5,20 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #fff; /* اللون الأبيض للخلفية */
+  background-color: #000; /* الخلفية سوداء */
 }
 
 h1 {
-  color: #000; /* اللون الأسود للنص */
+  color: #fff; /* النص باللون الأبيض */
   font-size: 2em;
 }
 
 .container {
   text-align: center;
-  background-color: #fff; /* اللون الأبيض للخلفية */
+  background-color: #000; /* الخلفية سوداء */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .game-board {
@@ -32,13 +32,13 @@ h1 {
 .card {
   width: 100px;
   height: 100px;
-  background-color: #000; /* اللون الأسود للبطاقات */
+  background-color: #fff; /* البطاقات بيضاء */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2em;
   cursor: pointer;
-  color: #fff; /* النص باللون الأبيض */
+  color: #000; /* النص داخل البطاقات باللون الأسود */
   perspective: 1000px;
 }
 
@@ -54,13 +54,13 @@ h1 {
 }
 
 .card-front {
-  background-color: #000; /* اللون الأسود */
+  background-color: #fff; /* البطاقات بيضاء */
 }
 
 .card-back {
-  background-color: #000; /* اللون الأسود */
+  background-color: #fff; /* البطاقات بيضاء */
   font-size: 60px;
-  color: #fff; /* اللون الأبيض للنص */
+  color: #000; /* النص داخل البطاقات باللون الأسود */
   transform: rotateY(180deg);
 }
 
@@ -72,28 +72,28 @@ button {
   padding: 15px 20px;
   font-size: 18px;
   font-weight: 600;
-  color: #000; /* اللون الأسود للنص */
-  border: 2px solid #000; /* حدود سوداء */
+  color: #fff; /* النص بالأبيض */
+  border: 2px solid #fff; /* حدود بيضاء */
   cursor: pointer;
-  background-color: #fff; /* اللون الأبيض للخلفية */
+  background-color: #000; /* الخلفية سوداء */
 }
 
 /* Added styles for the blog section */
 #blog {
   margin: 20px;
   padding: 15px;
-  background-color: #fff; /* اللون الأبيض */
-  border: 1px solid #000; /* الحدود باللون الأسود */
+  background-color: #000; /* الخلفية سوداء */
+  border: 1px solid #fff; /* الحدود باللون الأبيض */
   border-radius: 5px;
 }
 
 #blog h2 {
   font-size: 24px;
-  color: #000; /* اللون الأسود */
+  color: #fff; /* النص بالأبيض */
 }
 
 #blog p {
   font-size: 16px;
   line-height: 1.6;
-  color: #000; /* اللون الأسود للنص */
+  color: #fff; /* النص بالأبيض */
 }
