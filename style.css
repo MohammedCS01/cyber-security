@@ -15,7 +15,7 @@ h1 {
 
 .container {
   text-align: center;
-  background-color: #f8e391;
+  background-color: #a7f1c5;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@ button {
   color: rgb(228, 240, 240);
   border: none;
   cursor: pointer;
-  background-color: efff09;
+  background-color: #008cba;
 }
 
 /* Added styles for the blog section */
